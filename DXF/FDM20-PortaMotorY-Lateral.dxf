@@ -15,10 +15,13 @@ $DWGCODEPAGE
   3
 ANSI_1252
   9
+<<<<<<< HEAD
 $LASTSAVEDBY
   1
 Proyectil
   9
+=======
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 $INSBASE
  10
 0.0
@@ -29,17 +32,29 @@ $INSBASE
   9
 $EXTMIN
  10
+<<<<<<< HEAD
 -0.1500000000000039
  20
 -0.1500000000000003
+=======
+0.0
+ 20
+0.0
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   9
 $EXTMAX
  10
+<<<<<<< HEAD
 48.45
  20
 55.65
+=======
+87.4550396592169
+ 20
+93.06390058416971
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   9
@@ -449,7 +464,11 @@ $SKPOLY
   9
 $TDCREATE
  40
+<<<<<<< HEAD
 2457449.718036134
+=======
+2457449.676369468
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
   9
 $TDUCREATE
  40
@@ -457,6 +476,7 @@ $TDUCREATE
   9
 $TDUPDATE
  40
+<<<<<<< HEAD
 2457519.718074398
   9
 $TDUUPDATE
@@ -470,6 +490,21 @@ $TDINDWG
 $TDUSRTIMER
  40
 0.0021229398
+=======
+2457449.676369468
+  9
+$TDUUPDATE
+ 40
+2457449.926369468
+  9
+$TDINDWG
+ 40
+0.0000032986
+  9
+$TDUSRTIMER
+ 40
+0.0000032986
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
   9
 $USRTIMER
  70
@@ -509,7 +544,11 @@ $SPLINESEGS
   9
 $HANDSEED
   5
+<<<<<<< HEAD
 1A6
+=======
+12C
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
   9
 $SURFTAB1
  70
@@ -893,7 +932,11 @@ $FINGERPRINTGUID
   9
 $VERSIONGUID
   2
+<<<<<<< HEAD
 {5DE09584-CD6A-47B3-8AE1-A783341D3DA5}
+=======
+{71D19197-69A9-414E-A7DF-ECBFE500F531}
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
   9
 $EXTNAMES
 290
@@ -1063,7 +1106,11 @@ ObjectDBX Classes
  90
      1025
  91
+<<<<<<< HEAD
         2
+=======
+        1
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 280
      0
 281
@@ -1079,7 +1126,11 @@ ObjectDBX Classes
  90
      1025
  91
+<<<<<<< HEAD
         2
+=======
+        1
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 280
      0
 281
@@ -1095,7 +1146,11 @@ ObjectDBX Classes
  90
         0
  91
+<<<<<<< HEAD
        11
+=======
+       10
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 280
      0
 281
@@ -1111,6 +1166,7 @@ ObjectDBX Classes
  90
      1152
  91
+<<<<<<< HEAD
         2
 280
      0
@@ -1127,6 +1183,8 @@ ObjectDBX Classes
  90
         0
  91
+=======
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
         1
 280
      0
@@ -1173,9 +1231,15 @@ AcDbViewportTableRecord
  21
 1.0
  12
+<<<<<<< HEAD
 48.42562106785537
  22
 23.38619132306971
+=======
+17.49231387443419
+ 22
+30.35866297659495
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  13
 0.0
  23
@@ -1201,9 +1265,15 @@ AcDbViewportTableRecord
  37
 0.0
  40
+<<<<<<< HEAD
 94.55215909004982
  41
 2.283154121863799
+=======
+93.06390058416971
+ 41
+0.9397310784337909
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  42
 50.0
  43
@@ -1256,10 +1326,13 @@ AcDbViewportTableRecord
      0
 146
 0.0
+<<<<<<< HEAD
 1001
 ACAD_NAV_VCDISPLAY
 1070
      3
+=======
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
   0
 ENDTAB
   0
@@ -1273,7 +1346,11 @@ LTYPE
 100
 AcDbSymbolTable
  70
+<<<<<<< HEAD
     60
+=======
+    59
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
   0
 LTYPE
   5
@@ -1361,7 +1438,11 @@ By Standard ____________    ____    ____   _
  73
      6
  40
+<<<<<<< HEAD
 1.240299999999998
+=======
+1.240299999999999
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  49
 0.6614
  74
@@ -1483,7 +1564,11 @@ Double-Dash Dot __ __ . __ __ . __ __ . __ _
  73
      6
  40
+<<<<<<< HEAD
 0.4398000000000001
+=======
+0.4398
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  49
 0.24
  74
@@ -1613,7 +1698,11 @@ Dash Double-Dot __ . . __ . . __ . . __ . .
  73
      6
  40
+<<<<<<< HEAD
 0.4398000000000001
+=======
+0.4398
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  49
 0.24
  74
@@ -1719,7 +1808,11 @@ Double-Dash Chain ______  __  __  ______  __  _
  73
      6
  40
+<<<<<<< HEAD
 1.240299999999998
+=======
+1.240299999999999
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  49
 0.6614
  74
@@ -1765,7 +1858,11 @@ Double-Dash Double-dot _ _ . . _ _ . . _
  73
      8
  40
+<<<<<<< HEAD
 0.7400000000000002
+=======
+0.7400000000000001
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  49
 0.24
  74
@@ -2961,7 +3058,11 @@ ISO long-dash double-dot ____ .. ____ .. ____ .
  73
      6
  40
+<<<<<<< HEAD
 1.299999999999998
+=======
+1.299999999999999
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  49
 0.9399999999999998
  74
@@ -3213,7 +3314,11 @@ ISO double-dash dot __ __ . __ __ . __ __ . __
  73
      6
  40
+<<<<<<< HEAD
 1.299999999999998
+=======
+1.299999999999999
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  49
 0.47
  74
@@ -3617,7 +3722,11 @@ Batting SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS
  73
      4
  40
+<<<<<<< HEAD
 0.4001000000000002
+=======
+0.4001000000000001
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  49
 0.0001
  74
@@ -4003,7 +4112,11 @@ APPID
 100
 AcDbSymbolTable
  70
+<<<<<<< HEAD
      5
+=======
+     3
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
   0
 APPID
   5
@@ -4047,6 +4160,7 @@ ACAD_MLEADERVER
  70
      0
   0
+<<<<<<< HEAD
 APPID
   5
 133
@@ -4075,6 +4189,8 @@ ACAD_NAV_VCDISPLAY
  70
      0
   0
+=======
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 ENDTAB
   0
 TABLE
@@ -4087,6 +4203,7 @@ A
 100
 AcDbSymbolTable
  70
+<<<<<<< HEAD
      3
 100
 AcDbDimStyleTable
@@ -4094,6 +4211,13 @@ AcDbDimStyleTable
      1
 340
 58
+=======
+     2
+100
+AcDbDimStyleTable
+ 71
+     0
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
   0
 DIMSTYLE
 105
@@ -4151,17 +4275,24 @@ BLOCK_RECORD
 100
 AcDbSymbolTable
  70
+<<<<<<< HEAD
      2
+=======
+     1
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
   0
 BLOCK_RECORD
   5
 70
+<<<<<<< HEAD
 102
 {ACAD_XDICTIONARY
 360
 165
 102
 }
+=======
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 330
 1
 100
@@ -4339,7 +4470,11 @@ ENTITIES
   0
 POLYLINE
   5
+<<<<<<< HEAD
 13A
+=======
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 330
 70
 100
@@ -4361,9 +4496,15 @@ AcDb2dPolyline
   0
 VERTEX
   5
+<<<<<<< HEAD
 13B
 330
 13A
+=======
+B7
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -4373,17 +4514,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 22.55
  20
 44.85
+=======
+22.4
+ 20
+45.0
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 13C
 330
 13A
+=======
+B8
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -4393,17 +4546,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 22.55
  20
 50.15
+=======
+22.4
+ 20
+50.0
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 13D
 330
 13A
+=======
+BA
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -4413,17 +4578,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 18.65000000000001
  20
 50.15
+=======
+18.50000000000001
+ 20
+50.0
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 13E
 330
 13A
+=======
+BB
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -4433,17 +4610,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 18.65000000000001
  20
 55.65
+=======
+18.50000000000001
+ 20
+55.5
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 13F
 330
 13A
+=======
+BC
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -4453,17 +4642,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 5.849999999999996
  20
 55.65
+=======
+6.0
+ 20
+55.5
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 140
 330
 13A
+=======
+BD
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -4473,17 +4674,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 5.849999999999991
  20
 45.14999999999999
+=======
+5.999999999999992
+ 20
+44.99999999999999
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 141
 330
 13A
+=======
+BE
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -4493,17 +4706,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 -0.1500000000000003
  20
 45.14999999999999
+=======
+0.0
+ 20
+44.99999999999999
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 142
 330
 13A
+=======
+BF
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -4513,17 +4738,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 -0.15
  20
 29.85
+=======
+0.0
+ 20
+30.0
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 143
 330
 13A
+=======
+C0
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -4533,17 +4770,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 5.849999999999989
  20
 29.85
+=======
+5.999999999999996
+ 20
+30.0
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 144
 330
 13A
+=======
+C1
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -4553,17 +4802,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 5.849999999999996
  20
 24.09999999999999
+=======
+5.999999999999996
+ 20
+24.24999999999999
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 145
 330
 13A
+=======
+C2
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -4573,17 +4834,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 11.14999999999999
  20
 24.09999999999999
+=======
+10.99999999999999
+ 20
+24.24999999999999
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 146
 330
 13A
+=======
+C3
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -4593,17 +4866,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 11.14999999999999
  20
 25.09999999999998
+=======
+10.99999999999999
+ 20
+25.24999999999999
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 147
 330
 13A
+=======
+C4
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -4613,17 +4898,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 12.84999999999999
  20
 25.09999999999999
+=======
+13.0
+ 20
+25.24999999999999
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 148
 330
 13A
+=======
+C5
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -4633,17 +4930,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 12.84999999999999
  20
 24.09999999999999
+=======
+12.99999999999999
+ 20
+24.24999999999999
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 149
 330
 13A
+=======
+C6
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -4653,17 +4962,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 15.84999999999998
  20
 24.09999999999999
+=======
+15.99999999999999
+ 20
+24.24999999999999
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 14A
 330
 13A
+=======
+C7
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -4673,17 +4994,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 15.84999999999999
  20
 20.89999999999999
+=======
+15.99999999999999
+ 20
+20.74999999999999
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 14B
 330
 13A
+=======
+C8
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -4693,17 +5026,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 12.84999999999999
  20
 20.89999999999999
+=======
+12.99999999999999
+ 20
+20.74999999999999
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 14C
 330
 13A
+=======
+C9
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -4713,17 +5058,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 12.85
  20
 19.89999999999998
+=======
+13.00000000000001
+ 20
+19.74999999999998
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 14D
 330
 13A
+=======
+CA
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -4733,17 +5090,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 11.14999999999998
  20
 19.89999999999998
+=======
+10.99999999999999
+ 20
+19.74999999999998
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 14E
 330
 13A
+=======
+CB
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -4753,17 +5122,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 11.14999999999998
  20
 20.89999999999999
+=======
+10.99999999999998
+ 20
+20.74999999999999
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 14F
 330
 13A
+=======
+CC
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -4773,17 +5154,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 5.849999999999996
  20
 20.89999999999999
+=======
+5.999999999999996
+ 20
+20.74999999999999
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 150
 330
 13A
+=======
+CD
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -4793,17 +5186,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 5.849999999999996
  20
 15.14999999999999
+=======
+5.999999999999996
+ 20
+14.99999999999999
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 151
 330
 13A
+=======
+CE
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -4813,17 +5218,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 -0.1500000000000039
  20
 15.14999999999999
+=======
+-0.0000000000000044
+ 20
+14.99999999999999
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 152
 330
 13A
+=======
+CF
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -4833,17 +5250,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 -0.15
  20
 -0.1500000000000003
+=======
+0.0
+ 20
+0.0
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 153
 330
 13A
+=======
+D0
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -4853,17 +5282,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 16.06213203435596
  20
 -0.15
+=======
+16.0
+ 20
+0.0
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 154
 330
 13A
+=======
+D1
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -4873,17 +5314,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 48.45
  20
 32.23786796564403
+=======
+48.3
+ 20
+32.29999999999999
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 155
 330
 13A
+=======
+D2
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -4893,17 +5346,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 48.44999999999999
  20
 50.15
+=======
+48.3
+ 20
+50.0
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 156
 330
 13A
+=======
+D3
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -4913,17 +5378,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 42.44999999999998
  20
 50.15
+=======
+42.29999999999998
+ 20
+50.0
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 157
 330
 13A
+=======
+D4
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -4933,17 +5410,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 42.44999999999997
  20
 55.65
+=======
+42.29999999999998
+ 20
+55.5
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 158
 330
 13A
+=======
+D5
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -4953,17 +5442,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 29.64999999999999
  20
 55.65
+=======
+29.79999999999999
+ 20
+55.5
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 159
 330
 13A
+=======
+D6
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -4973,17 +5474,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 29.64999999999999
  20
 50.15
+=======
+29.79999999999999
+ 20
+50.0
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 15A
 330
 13A
+=======
+D7
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -4993,17 +5506,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 25.75
  20
 50.15
+=======
+25.9
+ 20
+50.0
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 15B
 330
 13A
+=======
+D8
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -5013,17 +5538,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 25.75
  20
 44.84999999999999
+=======
+25.9
+ 20
+44.99999999999999
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 15C
 330
 13A
+=======
+D9
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -5033,17 +5570,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 26.74999999999999
  20
 44.85
+=======
+26.9
+ 20
+45.0
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 15D
 330
 13A
+=======
+DA
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -5053,17 +5602,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 26.75
  20
 43.15
+=======
+26.9
+ 20
+43.0
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 15E
 330
 13A
+=======
+DB
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -5073,17 +5634,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 25.75
  20
 43.15
+=======
+25.9
+ 20
+43.0
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 15F
 330
 13A
+=======
+DC
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -5093,17 +5666,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 25.75
  20
 40.15
+=======
+25.9
+ 20
+40.0
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 160
 330
 13A
+=======
+DD
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -5113,17 +5698,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 22.54999999999998
  20
 40.14999999999999
+=======
+22.4
+ 20
+40.0
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 161
 330
 13A
+=======
+DE
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -5133,17 +5730,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 22.55
  20
 43.15
+=======
+22.4
+ 20
+43.0
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 162
 330
 13A
+=======
+DF
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -5153,17 +5762,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 21.54999999999998
  20
 43.15
+=======
+21.4
+ 20
+43.0
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 VERTEX
   5
+<<<<<<< HEAD
 163
 330
 13A
+=======
+E0
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -5173,17 +5794,29 @@ AcDbVertex
 100
 AcDb2dVertex
  10
+<<<<<<< HEAD
 21.55
  20
 44.85000000000002
+=======
+21.4
+ 20
+45.0
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  30
 0.0
   0
 SEQEND
   5
+<<<<<<< HEAD
 164
 330
 13A
+=======
+B9
+330
+B6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbEntity
   8
@@ -5263,12 +5896,17 @@ ACAD_VISUALSTYLE
   3
 ACDB_RECOMPOSE_DATA
 350
+<<<<<<< HEAD
 16A
+=======
+F0
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
   3
 AcDbVariableDictionary
 350
 E3
   0
+<<<<<<< HEAD
 DICTIONARY
   5
 165
@@ -5285,6 +5923,8 @@ ACAD_SORTENTS
 360
 166
   0
+=======
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 XRECORD
   5
 E2
@@ -5301,11 +5941,19 @@ AcDbXrecord
 280
      1
 300
+<<<<<<< HEAD
 ACD
 300
 2015
 300
 ACD_F_S
+=======
+
+300
+
+300
+
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
   0
 DICTIONARY
   5
@@ -5342,10 +5990,13 @@ AcDbDictionary
 Imperial24
 350
 6B
+<<<<<<< HEAD
   3
 Metric50
 350
 12F
+=======
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
   0
 DICTIONARY
   5
@@ -5602,10 +6253,13 @@ AcDbDictionary
 Imperial24
 350
 69
+<<<<<<< HEAD
   3
 Metric50
 350
 12E
+=======
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
   0
 DICTIONARY
   5
@@ -5741,7 +6395,11 @@ X-Ray
   0
 XRECORD
   5
+<<<<<<< HEAD
 16A
+=======
+F0
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 102
 {ACAD_REACTORS
 330
@@ -5813,6 +6471,7 @@ E8
   3
 XCLIPFRAME
 350
+<<<<<<< HEAD
 167
   0
 SORTENTSTABLE
@@ -5834,6 +6493,9 @@ AcDbSortentsTable
 13A
   5
 13A
+=======
+ED
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
   0
 ACDBDETAILVIEWSTYLE
   5
@@ -5841,7 +6503,11 @@ ACDBDETAILVIEWSTYLE
 102
 {ACAD_XDICTIONARY
 360
+<<<<<<< HEAD
 1A0
+=======
+12A
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 102
 }
 102
@@ -5929,6 +6595,7 @@ AcDbDetailViewStyle
 280
      0
   0
+<<<<<<< HEAD
 ACDBDETAILVIEWSTYLE
   5
 12F
@@ -6102,6 +6769,87 @@ AcDbLayout
 Layout1
  70
      1
+=======
+LAYOUT
+  5
+6F
+102
+{ACAD_REACTORS
+330
+62
+102
+}
+330
+62
+100
+AcDbPlotSettings
+  1
+
+  2
+
+  4
+
+  6
+
+ 40
+0.0
+ 41
+0.0
+ 42
+0.0
+ 43
+0.0
+ 44
+0.0
+ 45
+0.0
+ 46
+0.0
+ 47
+0.0
+ 48
+0.0
+ 49
+0.0
+140
+0.0
+141
+0.0
+142
+1.0
+143
+1.0
+ 70
+   688
+ 72
+     0
+ 73
+     0
+ 74
+     5
+  7
+
+ 75
+    16
+147
+1.0
+ 76
+     0
+ 77
+     2
+ 78
+   300
+148
+0.0
+149
+0.0
+100
+AcDbLayout
+  1
+Layout1
+ 70
+     1
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  71
      1
  10
@@ -6109,9 +6857,15 @@ Layout1
  20
 0.0
  11
+<<<<<<< HEAD
 87.4550396592169
  21
 93.06390058416971
+=======
+12.0
+ 21
+9.0
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  12
 0.0
  22
@@ -6125,9 +6879,15 @@ Layout1
  34
 0.0
  15
+<<<<<<< HEAD
 87.4550396592169
  25
 93.06390058416971
+=======
+0.0
+ 25
+0.0
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  35
 0.0
 146
@@ -6418,8 +7178,11 @@ Model
      0
 330
 70
+<<<<<<< HEAD
 331
 57
+=======
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
   0
 MATERIAL
   5
@@ -7099,7 +7862,11 @@ MLEADERSTYLE
 102
 {ACAD_XDICTIONARY
 360
+<<<<<<< HEAD
 19C
+=======
+126
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 102
 }
 102
@@ -7661,7 +8428,11 @@ ACDBSECTIONVIEWSTYLE
 102
 {ACAD_XDICTIONARY
 360
+<<<<<<< HEAD
 19E
+=======
+128
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 102
 }
 102
@@ -7779,6 +8550,7 @@ ANSI31
  40
 -0.2617993877991494
  40
+<<<<<<< HEAD
 1.832595714594045
   0
 ACDBSECTIONVIEWSTYLE
@@ -7788,11 +8560,23 @@ ACDBSECTIONVIEWSTYLE
 {ACAD_XDICTIONARY
 360
 1A2
+=======
+1.832595714594046
+  0
+TABLESTYLE
+  5
+65
+102
+{ACAD_XDICTIONARY
+360
+EE
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 102
 }
 102
 {ACAD_REACTORS
 330
+<<<<<<< HEAD
 68
 102
 }
@@ -7808,10 +8592,22 @@ Metric50
      0
 100
 AcDbSectionViewStyle
+=======
+64
+102
+}
+330
+64
+100
+AcDbTableStyle
+  3
+Standard
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  70
      0
  71
      0
+<<<<<<< HEAD
  90
       102
  71
@@ -7951,6 +8747,27 @@ Standard
  63
      7
 283
+=======
+ 40
+0.06
+ 41
+0.06
+280
+     0
+281
+     0
+  7
+Standard
+140
+0.18
+170
+     2
+ 62
+     0
+ 63
+     7
+283
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
      0
 274
     -2
@@ -8091,7 +8908,11 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
+<<<<<<< HEAD
 175
+=======
+FE
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 102
 }
 102
@@ -8105,7 +8926,11 @@ VISUALSTYLE
 100
 AcDbVisualStyle
   2
+<<<<<<< HEAD
 
+=======
+2dWireframe
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  70
      4
  71
@@ -8187,7 +9012,11 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
+<<<<<<< HEAD
 173
+=======
+FC
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 102
 }
 102
@@ -8201,7 +9030,11 @@ VISUALSTYLE
 100
 AcDbVisualStyle
   2
+<<<<<<< HEAD
 
+=======
+Basic
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  70
      7
  71
@@ -8283,7 +9116,11 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
+<<<<<<< HEAD
 181
+=======
+10A
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 102
 }
 102
@@ -8297,7 +9134,11 @@ VISUALSTYLE
 100
 AcDbVisualStyle
   2
+<<<<<<< HEAD
 
+=======
+Brighten
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  70
     12
  71
@@ -8379,7 +9220,11 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
+<<<<<<< HEAD
 189
+=======
+112
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 102
 }
 102
@@ -8393,7 +9238,11 @@ VISUALSTYLE
 100
 AcDbVisualStyle
   2
+<<<<<<< HEAD
 
+=======
+ColorChange
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  70
     16
  71
@@ -8477,7 +9326,11 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
+<<<<<<< HEAD
 17B
+=======
+104
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 102
 }
 102
@@ -8491,7 +9344,11 @@ VISUALSTYLE
 100
 AcDbVisualStyle
   2
+<<<<<<< HEAD
 
+=======
+Conceptual
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  70
      9
  71
@@ -8573,7 +9430,11 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
+<<<<<<< HEAD
 17F
+=======
+108
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 102
 }
 102
@@ -8587,7 +9448,11 @@ VISUALSTYLE
 100
 AcDbVisualStyle
   2
+<<<<<<< HEAD
 
+=======
+Dim
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  70
     11
  71
@@ -8669,7 +9534,11 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
+<<<<<<< HEAD
 199
+=======
+122
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 102
 }
 102
@@ -8683,7 +9552,11 @@ VISUALSTYLE
 100
 AcDbVisualStyle
   2
+<<<<<<< HEAD
 
+=======
+EdgeColorOff
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  70
     22
  71
@@ -8765,7 +9638,11 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
+<<<<<<< HEAD
 187
+=======
+110
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 102
 }
 102
@@ -8779,7 +9656,11 @@ VISUALSTYLE
 100
 AcDbVisualStyle
   2
+<<<<<<< HEAD
 
+=======
+Facepattern
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  70
     15
  71
@@ -8861,7 +9742,11 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
+<<<<<<< HEAD
 16B
+=======
+F4
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 102
 }
 102
@@ -8875,7 +9760,11 @@ VISUALSTYLE
 100
 AcDbVisualStyle
   2
+<<<<<<< HEAD
 
+=======
+Flat
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  70
      0
  71
@@ -8957,7 +9846,11 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
+<<<<<<< HEAD
 16D
+=======
+F6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 102
 }
 102
@@ -8971,7 +9864,11 @@ VISUALSTYLE
 100
 AcDbVisualStyle
   2
+<<<<<<< HEAD
 
+=======
+FlatWithEdges
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  70
      1
  71
@@ -9053,7 +9950,11 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
+<<<<<<< HEAD
 16F
+=======
+F8
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 102
 }
 102
@@ -9067,7 +9968,11 @@ VISUALSTYLE
 100
 AcDbVisualStyle
   2
+<<<<<<< HEAD
 
+=======
+Gouraud
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  70
      2
  71
@@ -9149,7 +10054,11 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
+<<<<<<< HEAD
 171
+=======
+FA
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 102
 }
 102
@@ -9163,7 +10072,11 @@ VISUALSTYLE
 100
 AcDbVisualStyle
   2
+<<<<<<< HEAD
 
+=======
+GouraudWithEdges
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  70
      3
  71
@@ -9245,7 +10158,11 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
+<<<<<<< HEAD
 179
+=======
+102
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 102
 }
 102
@@ -9259,7 +10176,11 @@ VISUALSTYLE
 100
 AcDbVisualStyle
   2
+<<<<<<< HEAD
 
+=======
+Hidden
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  70
      6
  71
@@ -9341,7 +10262,11 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
+<<<<<<< HEAD
 195
+=======
+11E
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 102
 }
 102
@@ -9355,7 +10280,11 @@ VISUALSTYLE
 100
 AcDbVisualStyle
   2
+<<<<<<< HEAD
 
+=======
+JitterOff
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  70
     20
  71
@@ -9437,7 +10366,11 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
+<<<<<<< HEAD
 185
+=======
+10E
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 102
 }
 102
@@ -9451,7 +10384,11 @@ VISUALSTYLE
 100
 AcDbVisualStyle
   2
+<<<<<<< HEAD
 
+=======
+Linepattern
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  70
     14
  71
@@ -9533,7 +10470,11 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
+<<<<<<< HEAD
 197
+=======
+120
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 102
 }
 102
@@ -9547,7 +10488,11 @@ VISUALSTYLE
 100
 AcDbVisualStyle
   2
+<<<<<<< HEAD
 
+=======
+OverhangOff
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  70
     21
  71
@@ -9629,7 +10574,11 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
+<<<<<<< HEAD
 17D
+=======
+106
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 102
 }
 102
@@ -9643,7 +10592,11 @@ VISUALSTYLE
 100
 AcDbVisualStyle
   2
+<<<<<<< HEAD
 
+=======
+Realistic
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  70
      8
  71
@@ -9725,7 +10678,11 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
+<<<<<<< HEAD
 193
+=======
+11C
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 102
 }
 102
@@ -9739,7 +10696,11 @@ VISUALSTYLE
 100
 AcDbVisualStyle
   2
+<<<<<<< HEAD
 
+=======
+Shaded
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  70
     27
  71
@@ -9823,7 +10784,11 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
+<<<<<<< HEAD
 191
+=======
+11A
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 102
 }
 102
@@ -9837,7 +10802,11 @@ VISUALSTYLE
 100
 AcDbVisualStyle
   2
+<<<<<<< HEAD
 
+=======
+Shaded with edges
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  70
     26
  71
@@ -9919,7 +10888,11 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
+<<<<<<< HEAD
 18B
+=======
+114
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 102
 }
 102
@@ -9933,7 +10906,11 @@ VISUALSTYLE
 100
 AcDbVisualStyle
   2
+<<<<<<< HEAD
 
+=======
+Shades of Gray
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  70
     23
  71
@@ -10015,7 +10992,11 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
+<<<<<<< HEAD
 18D
+=======
+116
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 102
 }
 102
@@ -10029,7 +11010,11 @@ VISUALSTYLE
 100
 AcDbVisualStyle
   2
+<<<<<<< HEAD
 
+=======
+Sketchy
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  70
     24
  71
@@ -10111,7 +11096,11 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
+<<<<<<< HEAD
 183
+=======
+10C
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 102
 }
 102
@@ -10125,7 +11114,11 @@ VISUALSTYLE
 100
 AcDbVisualStyle
   2
+<<<<<<< HEAD
 
+=======
+Thicken
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  70
     13
  71
@@ -10207,7 +11200,11 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
+<<<<<<< HEAD
 177
+=======
+100
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 102
 }
 102
@@ -10221,7 +11218,11 @@ VISUALSTYLE
 100
 AcDbVisualStyle
   2
+<<<<<<< HEAD
 
+=======
+Wireframe
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  70
      5
  71
@@ -10303,7 +11304,11 @@ VISUALSTYLE
 102
 {ACAD_XDICTIONARY
 360
+<<<<<<< HEAD
 18F
+=======
+118
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 102
 }
 102
@@ -10317,7 +11322,11 @@ VISUALSTYLE
 100
 AcDbVisualStyle
   2
+<<<<<<< HEAD
 
+=======
+X-Ray
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  70
     25
  71
@@ -10557,7 +11566,11 @@ DictionaryVariables
   0
 DICTIONARYVAR
   5
+<<<<<<< HEAD
 167
+=======
+ED
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 102
 {ACAD_REACTORS
 330
@@ -10575,7 +11588,11 @@ DictionaryVariables
   0
 DICTIONARY
   5
+<<<<<<< HEAD
 1A0
+=======
+12A
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 330
 6B
 100
@@ -10587,6 +11604,7 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
+<<<<<<< HEAD
 1A1
   0
 DICTIONARY
@@ -10604,6 +11622,9 @@ AcDbDictionary
 ACAD_XREC_ROUNDTRIP
 360
 1A5
+=======
+12B
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
   0
 DICTIONARY
   5
@@ -10731,7 +11752,11 @@ SPECULARTILE
   0
 DICTIONARY
   5
+<<<<<<< HEAD
 19C
+=======
+126
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 330
 67
 100
@@ -10743,11 +11768,19 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
+<<<<<<< HEAD
 19D
   0
 DICTIONARY
   5
 19E
+=======
+127
+  0
+DICTIONARY
+  5
+128
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 330
 69
 100
@@ -10759,6 +11792,7 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
+<<<<<<< HEAD
 19F
   0
 DICTIONARY
@@ -10776,6 +11810,9 @@ AcDbDictionary
 ACAD_XREC_ROUNDTRIP
 360
 1A3
+=======
+129
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
   0
 DICTIONARY
   5
@@ -10791,6 +11828,7 @@ AcDbDictionary
   3
 ACAD_ROUNDTRIP_2008_TABLESTYLE_CELLSTYLEMAP
 360
+<<<<<<< HEAD
 169
   3
 ACAD_XREC_ROUNDTRIP
@@ -10800,6 +11838,17 @@ ACAD_XREC_ROUNDTRIP
 DICTIONARY
   5
 175
+=======
+EF
+  3
+ACAD_XREC_ROUNDTRIP
+360
+124
+  0
+DICTIONARY
+  5
+FE
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 330
 2F
 100
@@ -10811,11 +11860,19 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
+<<<<<<< HEAD
 176
   0
 DICTIONARY
   5
 173
+=======
+FF
+  0
+DICTIONARY
+  5
+FC
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 330
 2E
 100
@@ -10827,11 +11884,19 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
+<<<<<<< HEAD
 174
   0
 DICTIONARY
   5
 181
+=======
+FD
+  0
+DICTIONARY
+  5
+10A
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 330
 35
 100
@@ -10843,11 +11908,19 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
+<<<<<<< HEAD
 182
   0
 DICTIONARY
   5
 189
+=======
+10B
+  0
+DICTIONARY
+  5
+112
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 330
 39
 100
@@ -10859,11 +11932,19 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
+<<<<<<< HEAD
 18A
   0
 DICTIONARY
   5
 17B
+=======
+113
+  0
+DICTIONARY
+  5
+104
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 330
 32
 100
@@ -10875,11 +11956,19 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
+<<<<<<< HEAD
 17C
   0
 DICTIONARY
   5
 17F
+=======
+105
+  0
+DICTIONARY
+  5
+108
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 330
 34
 100
@@ -10891,11 +11980,19 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
+<<<<<<< HEAD
 180
   0
 DICTIONARY
   5
 199
+=======
+109
+  0
+DICTIONARY
+  5
+122
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 330
 41
 100
@@ -10907,11 +12004,19 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
+<<<<<<< HEAD
 19A
   0
 DICTIONARY
   5
 187
+=======
+123
+  0
+DICTIONARY
+  5
+110
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 330
 38
 100
@@ -10923,11 +12028,19 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
+<<<<<<< HEAD
 188
   0
 DICTIONARY
   5
 16B
+=======
+111
+  0
+DICTIONARY
+  5
+F4
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 330
 2A
 100
@@ -10939,11 +12052,19 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
+<<<<<<< HEAD
 16C
   0
 DICTIONARY
   5
 16D
+=======
+F5
+  0
+DICTIONARY
+  5
+F6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 330
 2B
 100
@@ -10955,11 +12076,19 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
+<<<<<<< HEAD
 16E
   0
 DICTIONARY
   5
 16F
+=======
+F7
+  0
+DICTIONARY
+  5
+F8
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 330
 2C
 100
@@ -10971,11 +12100,19 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
+<<<<<<< HEAD
 170
   0
 DICTIONARY
   5
 171
+=======
+F9
+  0
+DICTIONARY
+  5
+FA
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 330
 2D
 100
@@ -10987,11 +12124,19 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
+<<<<<<< HEAD
 172
   0
 DICTIONARY
   5
 179
+=======
+FB
+  0
+DICTIONARY
+  5
+102
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 330
 31
 100
@@ -11003,11 +12148,19 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
+<<<<<<< HEAD
 17A
   0
 DICTIONARY
   5
 195
+=======
+103
+  0
+DICTIONARY
+  5
+11E
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 330
 3F
 100
@@ -11019,11 +12172,19 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
+<<<<<<< HEAD
 196
   0
 DICTIONARY
   5
 185
+=======
+11F
+  0
+DICTIONARY
+  5
+10E
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 330
 37
 100
@@ -11035,11 +12196,19 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
+<<<<<<< HEAD
 186
   0
 DICTIONARY
   5
 197
+=======
+10F
+  0
+DICTIONARY
+  5
+120
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 330
 40
 100
@@ -11051,11 +12220,19 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
+<<<<<<< HEAD
 198
   0
 DICTIONARY
   5
 17D
+=======
+121
+  0
+DICTIONARY
+  5
+106
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 330
 33
 100
@@ -11067,11 +12244,19 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
+<<<<<<< HEAD
 17E
   0
 DICTIONARY
   5
 193
+=======
+107
+  0
+DICTIONARY
+  5
+11C
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 330
 3E
 100
@@ -11083,11 +12268,19 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
+<<<<<<< HEAD
 194
   0
 DICTIONARY
   5
 191
+=======
+11D
+  0
+DICTIONARY
+  5
+11A
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 330
 3D
 100
@@ -11099,11 +12292,19 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
+<<<<<<< HEAD
 192
   0
 DICTIONARY
   5
 18B
+=======
+11B
+  0
+DICTIONARY
+  5
+114
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 330
 3A
 100
@@ -11115,11 +12316,19 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
+<<<<<<< HEAD
 18C
   0
 DICTIONARY
   5
 18D
+=======
+115
+  0
+DICTIONARY
+  5
+116
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 330
 3B
 100
@@ -11131,11 +12340,19 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
+<<<<<<< HEAD
 18E
   0
 DICTIONARY
   5
 183
+=======
+117
+  0
+DICTIONARY
+  5
+10C
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 330
 36
 100
@@ -11147,11 +12364,19 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
+<<<<<<< HEAD
 184
   0
 DICTIONARY
   5
 177
+=======
+10D
+  0
+DICTIONARY
+  5
+100
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 330
 30
 100
@@ -11163,11 +12388,19 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
+<<<<<<< HEAD
 178
   0
 DICTIONARY
   5
 18F
+=======
+101
+  0
+DICTIONARY
+  5
+118
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 330
 3C
 100
@@ -11179,6 +12412,7 @@ AcDbDictionary
   3
 ACAD_XREC_ROUNDTRIP
 360
+<<<<<<< HEAD
 190
   0
 XRECORD
@@ -11192,6 +12426,21 @@ XRECORD
 }
 330
 1A0
+=======
+119
+  0
+XRECORD
+  5
+12B
+102
+{ACAD_REACTORS
+330
+12A
+102
+}
+330
+12A
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbXrecord
 280
@@ -11207,6 +12456,7 @@ FLAGS
   0
 XRECORD
   5
+<<<<<<< HEAD
 1A5
 102
 {ACAD_REACTORS
@@ -11231,6 +12481,8 @@ FLAGS
   0
 XRECORD
   5
+=======
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 F2
 102
 {ACAD_REACTORS
@@ -12555,6 +13807,7 @@ AcDbXrecord
   0
 XRECORD
   5
+<<<<<<< HEAD
 19D
 102
 {ACAD_REACTORS
@@ -12564,6 +13817,17 @@ XRECORD
 }
 330
 19C
+=======
+127
+102
+{ACAD_REACTORS
+330
+126
+102
+}
+330
+126
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbXrecord
 280
@@ -12575,6 +13839,7 @@ ACAD_ROUNDTRIP_2012_MLEADER_STYLE
   0
 XRECORD
   5
+<<<<<<< HEAD
 19F
 102
 {ACAD_REACTORS
@@ -12608,11 +13873,23 @@ XRECORD
 }
 330
 1A2
+=======
+129
+102
+{ACAD_REACTORS
+330
+128
+102
+}
+330
+128
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbXrecord
 280
      1
 102
+<<<<<<< HEAD
 DISPLAYNAME
   1
 Metric50
@@ -13044,16 +14321,97 @@ GRIDFORMAT_BEGIN
 0.045
 309
 GRIDFORMAT_END
+=======
+DISPLAYNAME
+  1
+Imperial24
+102
+FLAGS
+ 90
+        0
+  0
+CELLSTYLEMAP
+  5
+EF
+102
+{ACAD_REACTORS
+330
+EE
+102
+}
+330
+EE
+100
+AcDbCellStyleMap
+ 90
+        3
+300
+CELLSTYLE
+  1
+TABLEFORMAT_BEGIN
+ 90
+        5
+170
+     1
+ 91
+        0
+ 92
+    32768
+ 62
+   257
+ 93
+        1
+300
+CONTENTFORMAT
+  1
+CONTENTFORMAT_BEGIN
+ 90
+        0
+ 91
+        0
+ 92
+      512
+ 93
+        0
+300
+
+ 40
+0.0
+140
+1.0
+ 94
+        5
+ 62
+     0
+340
+55
+144
+0.25
+309
+CONTENTFORMAT_END
+171
+     0
+ 94
+        0
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 309
 TABLEFORMAT_END
   1
 CELLSTYLE_BEGIN
  90
+<<<<<<< HEAD
         2
  91
         1
 300
 _HEADER
+=======
+        1
+ 91
+        1
+300
+_TITLE
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 309
 CELLSTYLE_END
 300
@@ -13091,7 +14449,11 @@ CONTENTFORMAT_BEGIN
 140
 1.0
  94
+<<<<<<< HEAD
         2
+=======
+        5
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
  62
      0
 340
@@ -13101,6 +14463,7 @@ CONTENTFORMAT_BEGIN
 309
 CONTENTFORMAT_END
 171
+<<<<<<< HEAD
      1
 301
 MARGIN
@@ -13254,6 +14617,71 @@ GRIDFORMAT_BEGIN
 0.045
 309
 GRIDFORMAT_END
+=======
+     0
+ 94
+        0
+309
+TABLEFORMAT_END
+  1
+CELLSTYLE_BEGIN
+ 90
+        2
+ 91
+        1
+300
+_HEADER
+309
+CELLSTYLE_END
+300
+CELLSTYLE
+  1
+TABLEFORMAT_BEGIN
+ 90
+        5
+170
+     1
+ 91
+        0
+ 92
+        0
+ 62
+   257
+ 93
+        1
+300
+CONTENTFORMAT
+  1
+CONTENTFORMAT_BEGIN
+ 90
+        0
+ 91
+        0
+ 92
+      512
+ 93
+        0
+300
+
+ 40
+0.0
+140
+1.0
+ 94
+        2
+ 62
+     0
+340
+55
+144
+0.18
+309
+CONTENTFORMAT_END
+171
+     0
+ 94
+        0
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 309
 TABLEFORMAT_END
   1
@@ -13269,7 +14697,11 @@ CELLSTYLE_END
   0
 XRECORD
   5
+<<<<<<< HEAD
 19B
+=======
+124
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 102
 {ACAD_REACTORS
 330
@@ -13305,6 +14737,7 @@ ACAD_ROUNDTRIP_PRE2007_TABLESTYLE
   0
 XRECORD
   5
+<<<<<<< HEAD
 176
 102
 {ACAD_REACTORS
@@ -13314,6 +14747,17 @@ XRECORD
 }
 330
 175
+=======
+FF
+102
+{ACAD_REACTORS
+330
+FE
+102
+}
+330
+FE
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbXrecord
 280
@@ -13825,6 +15269,7 @@ RTVSPropertyOp62
   0
 XRECORD
   5
+<<<<<<< HEAD
 174
 102
 {ACAD_REACTORS
@@ -13834,6 +15279,17 @@ XRECORD
 }
 330
 173
+=======
+FD
+102
+{ACAD_REACTORS
+330
+FC
+102
+}
+330
+FC
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbXrecord
 280
@@ -14345,6 +15801,7 @@ RTVSPropertyOp62
   0
 XRECORD
   5
+<<<<<<< HEAD
 182
 102
 {ACAD_REACTORS
@@ -14354,6 +15811,17 @@ XRECORD
 }
 330
 181
+=======
+10B
+102
+{ACAD_REACTORS
+330
+10A
+102
+}
+330
+10A
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbXrecord
 280
@@ -14865,6 +16333,7 @@ RTVSPropertyOp62
   0
 XRECORD
   5
+<<<<<<< HEAD
 18A
 102
 {ACAD_REACTORS
@@ -14874,6 +16343,17 @@ XRECORD
 }
 330
 189
+=======
+113
+102
+{ACAD_REACTORS
+330
+112
+102
+}
+330
+112
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbXrecord
 280
@@ -15385,6 +16865,7 @@ RTVSPropertyOp62
   0
 XRECORD
   5
+<<<<<<< HEAD
 17C
 102
 {ACAD_REACTORS
@@ -15394,6 +16875,17 @@ XRECORD
 }
 330
 17B
+=======
+105
+102
+{ACAD_REACTORS
+330
+104
+102
+}
+330
+104
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbXrecord
 280
@@ -15905,6 +17397,7 @@ RTVSPropertyOp62
   0
 XRECORD
   5
+<<<<<<< HEAD
 180
 102
 {ACAD_REACTORS
@@ -15914,6 +17407,17 @@ XRECORD
 }
 330
 17F
+=======
+109
+102
+{ACAD_REACTORS
+330
+108
+102
+}
+330
+108
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbXrecord
 280
@@ -16425,6 +17929,7 @@ RTVSPropertyOp62
   0
 XRECORD
   5
+<<<<<<< HEAD
 19A
 102
 {ACAD_REACTORS
@@ -16434,6 +17939,17 @@ XRECORD
 }
 330
 199
+=======
+123
+102
+{ACAD_REACTORS
+330
+122
+102
+}
+330
+122
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbXrecord
 280
@@ -16945,6 +18461,7 @@ RTVSPropertyOp62
   0
 XRECORD
   5
+<<<<<<< HEAD
 188
 102
 {ACAD_REACTORS
@@ -16954,6 +18471,17 @@ XRECORD
 }
 330
 187
+=======
+111
+102
+{ACAD_REACTORS
+330
+110
+102
+}
+330
+110
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbXrecord
 280
@@ -17465,6 +18993,7 @@ RTVSPropertyOp62
   0
 XRECORD
   5
+<<<<<<< HEAD
 16C
 102
 {ACAD_REACTORS
@@ -17474,6 +19003,17 @@ XRECORD
 }
 330
 16B
+=======
+F5
+102
+{ACAD_REACTORS
+330
+F4
+102
+}
+330
+F4
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbXrecord
 280
@@ -17985,6 +19525,7 @@ RTVSPropertyOp62
   0
 XRECORD
   5
+<<<<<<< HEAD
 16E
 102
 {ACAD_REACTORS
@@ -17994,6 +19535,17 @@ XRECORD
 }
 330
 16D
+=======
+F7
+102
+{ACAD_REACTORS
+330
+F6
+102
+}
+330
+F6
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbXrecord
 280
@@ -18505,6 +20057,7 @@ RTVSPropertyOp62
   0
 XRECORD
   5
+<<<<<<< HEAD
 170
 102
 {ACAD_REACTORS
@@ -18514,6 +20067,17 @@ XRECORD
 }
 330
 16F
+=======
+F9
+102
+{ACAD_REACTORS
+330
+F8
+102
+}
+330
+F8
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbXrecord
 280
@@ -19025,6 +20589,7 @@ RTVSPropertyOp62
   0
 XRECORD
   5
+<<<<<<< HEAD
 172
 102
 {ACAD_REACTORS
@@ -19034,6 +20599,17 @@ XRECORD
 }
 330
 171
+=======
+FB
+102
+{ACAD_REACTORS
+330
+FA
+102
+}
+330
+FA
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbXrecord
 280
@@ -19545,6 +21121,7 @@ RTVSPropertyOp62
   0
 XRECORD
   5
+<<<<<<< HEAD
 17A
 102
 {ACAD_REACTORS
@@ -19554,6 +21131,17 @@ XRECORD
 }
 330
 179
+=======
+103
+102
+{ACAD_REACTORS
+330
+102
+102
+}
+330
+102
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbXrecord
 280
@@ -20065,6 +21653,7 @@ RTVSPropertyOp62
   0
 XRECORD
   5
+<<<<<<< HEAD
 196
 102
 {ACAD_REACTORS
@@ -20074,6 +21663,17 @@ XRECORD
 }
 330
 195
+=======
+11F
+102
+{ACAD_REACTORS
+330
+11E
+102
+}
+330
+11E
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbXrecord
 280
@@ -20585,6 +22185,7 @@ RTVSPropertyOp62
   0
 XRECORD
   5
+<<<<<<< HEAD
 186
 102
 {ACAD_REACTORS
@@ -20594,6 +22195,17 @@ XRECORD
 }
 330
 185
+=======
+10F
+102
+{ACAD_REACTORS
+330
+10E
+102
+}
+330
+10E
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbXrecord
 280
@@ -21105,6 +22717,7 @@ RTVSPropertyOp62
   0
 XRECORD
   5
+<<<<<<< HEAD
 198
 102
 {ACAD_REACTORS
@@ -21114,6 +22727,17 @@ XRECORD
 }
 330
 197
+=======
+121
+102
+{ACAD_REACTORS
+330
+120
+102
+}
+330
+120
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbXrecord
 280
@@ -21625,6 +23249,7 @@ RTVSPropertyOp62
   0
 XRECORD
   5
+<<<<<<< HEAD
 17E
 102
 {ACAD_REACTORS
@@ -21634,6 +23259,17 @@ XRECORD
 }
 330
 17D
+=======
+107
+102
+{ACAD_REACTORS
+330
+106
+102
+}
+330
+106
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbXrecord
 280
@@ -22145,6 +23781,7 @@ RTVSPropertyOp62
   0
 XRECORD
   5
+<<<<<<< HEAD
 194
 102
 {ACAD_REACTORS
@@ -22154,6 +23791,17 @@ XRECORD
 }
 330
 193
+=======
+11D
+102
+{ACAD_REACTORS
+330
+11C
+102
+}
+330
+11C
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbXrecord
 280
@@ -22665,6 +24313,7 @@ RTVSPropertyOp62
   0
 XRECORD
   5
+<<<<<<< HEAD
 192
 102
 {ACAD_REACTORS
@@ -22674,6 +24323,17 @@ XRECORD
 }
 330
 191
+=======
+11B
+102
+{ACAD_REACTORS
+330
+11A
+102
+}
+330
+11A
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbXrecord
 280
@@ -23185,6 +24845,7 @@ RTVSPropertyOp62
   0
 XRECORD
   5
+<<<<<<< HEAD
 18C
 102
 {ACAD_REACTORS
@@ -23194,6 +24855,17 @@ XRECORD
 }
 330
 18B
+=======
+115
+102
+{ACAD_REACTORS
+330
+114
+102
+}
+330
+114
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbXrecord
 280
@@ -23705,6 +25377,7 @@ RTVSPropertyOp62
   0
 XRECORD
   5
+<<<<<<< HEAD
 18E
 102
 {ACAD_REACTORS
@@ -23714,6 +25387,17 @@ XRECORD
 }
 330
 18D
+=======
+117
+102
+{ACAD_REACTORS
+330
+116
+102
+}
+330
+116
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbXrecord
 280
@@ -24225,6 +25909,7 @@ RTVSPropertyOp62
   0
 XRECORD
   5
+<<<<<<< HEAD
 184
 102
 {ACAD_REACTORS
@@ -24234,6 +25919,17 @@ XRECORD
 }
 330
 183
+=======
+10D
+102
+{ACAD_REACTORS
+330
+10C
+102
+}
+330
+10C
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbXrecord
 280
@@ -24745,6 +26441,7 @@ RTVSPropertyOp62
   0
 XRECORD
   5
+<<<<<<< HEAD
 178
 102
 {ACAD_REACTORS
@@ -24754,6 +26451,17 @@ XRECORD
 }
 330
 177
+=======
+101
+102
+{ACAD_REACTORS
+330
+100
+102
+}
+330
+100
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbXrecord
 280
@@ -25265,6 +26973,7 @@ RTVSPropertyOp62
   0
 XRECORD
   5
+<<<<<<< HEAD
 190
 102
 {ACAD_REACTORS
@@ -25274,6 +26983,17 @@ XRECORD
 }
 330
 18F
+=======
+119
+102
+{ACAD_REACTORS
+330
+118
+102
+}
+330
+118
+>>>>>>> 757c669f3450947f5c8220e39f543cac608e8a79
 100
 AcDbXrecord
 280
