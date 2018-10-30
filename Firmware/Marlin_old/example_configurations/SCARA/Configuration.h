@@ -65,11 +65,36 @@
 //
 
 //===========================================================================
-//============================= SCARA Printer ===============================
+//========================= SCARA Settings ==================================
 //===========================================================================
-// For a Scara printer replace the configuration files with the files in the
-// example_configurations/SCARA directory.
-//
+// SCARA-mode for Marlin has been developed by QHARLEY in ZA in 2012/2013. Implemented
+// and slightly reworked by JCERNY in 06/2014 with the goal to bring it into Master-Branch
+// QHARLEYS Autobedlevelling has not been ported, because Marlin has now Bed-levelling
+// You might need Z-Min endstop on SCARA-Printer to use this feature. Actually untested!
+// Uncomment to use Morgan scara mode
+#define SCARA
+#define SCARA_SEGMENTS_PER_SECOND 200 // If movement is choppy try lowering this value
+// Length of inner support arm
+#define Linkage_1 150 //mm      Preprocessor cannot handle decimal point...
+// Length of outer support arm     Measure arm lengths precisely and enter
+#define Linkage_2 150 //mm
+
+// SCARA tower offset (position of Tower relative to bed zero position)
+// This needs to be reasonably accurate as it defines the printbed position in the SCARA space.
+#define SCARA_offset_x 100 //mm
+#define SCARA_offset_y -56 //mm
+#define SCARA_RAD2DEG 57.2957795  // to convert RAD to degrees
+
+#define THETA_HOMING_OFFSET 0  //calculatated from Calibration Guide and command M360 / M114 see picture in http://reprap.harleystudio.co.za/?page_id=1073
+#define PSI_HOMING_OFFSET   0  //calculatated from Calibration Guide and command M364 / M114 see picture in http://reprap.harleystudio.co.za/?page_id=1073
+
+//some helper variables to make kinematics faster
+#define L1_2 sq(Linkage_1) // do not change
+#define L2_2 sq(Linkage_2) // do not change
+
+//===========================================================================
+//========================= SCARA Settings end ==============================
+//===========================================================================
 
 // @section info
 
@@ -110,7 +135,7 @@
 
 // Optional custom name for your RepStrap or other custom machine
 // Displayed in the LCD "Ready" message
-#define CUSTOM_MACHINE_NAME "FDM 20"
+//#define CUSTOM_MACHINE_NAME "3D Printer"
 
 // Define this to set a unique identifier for this printer, (Used by some programs to differentiate between machines)
 // You can use an online service to generate a random UUID. (eg http://www.uuidgenerator.net/version4)
@@ -182,7 +207,7 @@
 //#define DUMMY_THERMISTOR_998_VALUE 25
 //#define DUMMY_THERMISTOR_999_VALUE 100
 // :{ '0': "Not used", '4': "10k !! do not use for a hotend. Bad resolution at high temp. !!", '1': "100k / 4.7k - EPCOS", '51': "100k / 1k - EPCOS", '6': "100k / 4.7k EPCOS - Not as accurate as Table 1", '5': "100K / 4.7k - ATC Semitec 104GT-2 (Used in ParCan & J-Head)", '7': "100k / 4.7k Honeywell 135-104LAG-J01", '71': "100k / 4.7k Honeywell 135-104LAF-J01", '8': "100k / 4.7k 0603 SMD Vishay NTCS0603E3104FXT", '9': "100k / 4.7k GE Sensing AL03006-58.2K-97-G1", '10': "100k / 4.7k RS 198-961", '11': "100k / 4.7k beta 3950 1%", '12': "100k / 4.7k 0603 SMD Vishay NTCS0603E3104FXT (calibrated for Makibox hot bed)", '13': "100k Hisens 3950  1% up to 300°C for hotend 'Simple ONE ' & hotend 'All In ONE'", '60': "100k Maker's Tool Works Kapton Bed Thermistor beta=3950", '55': "100k / 1k - ATC Semitec 104GT-2 (Used in ParCan & J-Head)", '2': "200k / 4.7k - ATC Semitec 204GT-2", '52': "200k / 1k - ATC Semitec 204GT-2", '-3': "Thermocouple + MAX31855 (only for sensor 0)", '-2': "Thermocouple + MAX6675 (only for sensor 0)", '-1': "Thermocouple + AD595", '3': "Mendel-parts / 4.7k", '1047': "Pt1000 / 4.7k", '1010': "Pt1000 / 1k (non standard)", '20': "PT100 (Ultimainboard V2.x)", '147': "Pt100 / 4.7k", '110': "Pt100 / 1k (non-standard)", '998': "Dummy 1", '999': "Dummy 2" }
-#define TEMP_SENSOR_0 5
+#define TEMP_SENSOR_0 1
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_3 0
@@ -193,12 +218,12 @@
 #define MAX_REDUNDANT_TEMP_SENSOR_DIFF 10
 
 // Extruder temperature must be close to target for this long before M109 returns success
-#define TEMP_RESIDENCY_TIME 2  // (seconds)
-#define TEMP_HYSTERESIS 3       // (degC) range of +/- temperatures considered "close" to the target one
+#define TEMP_RESIDENCY_TIME 3  // (seconds)
+#define TEMP_HYSTERESIS 2       // (degC) range of +/- temperatures considered "close" to the target one
 #define TEMP_WINDOW     1       // (degC) Window around target to start the residency timer x degC early.
 
 // Bed temperature must be close to target for this long before M190 returns success
-#define TEMP_BED_RESIDENCY_TIME 2  // (seconds)
+#define TEMP_BED_RESIDENCY_TIME 0   // (seconds)
 #define TEMP_BED_HYSTERESIS 3       // (degC) range of +/- temperatures considered "close" to the target one
 #define TEMP_BED_WINDOW     1       // (degC) Window around target to start the residency timer x degC early.
 
@@ -221,8 +246,8 @@
 #define BED_MAXTEMP 150
 
 // If you want the M105 heater power reported in watts, define the BED_WATTS, and (shared for all extruders) EXTRUDER_WATTS
-//#define EXTRUDER_WATTS (12.0*12.0/6.7) // P=U^2/R
-//#define BED_WATTS (12.0*12.0/1.1)      // P=U^2/R
+#define EXTRUDER_WATTS (2*2/5.9)       // P=U^2/R
+#define BED_WATTS (5.45*5.45/2.2)      // P=U^2/R
 
 //===========================================================================
 //============================= PID Settings ================================
@@ -240,26 +265,15 @@
   //#define SLOW_PWM_HEATERS // PWM with very low frequency (roughly 0.125Hz=8s) and minimum state time of approximately 1s useful for heaters driven by a relay
   //#define PID_PARAMS_PER_EXTRUDER // Uses separate PID parameters for each extruder (useful for mismatched extruders)
                                     // Set/get with gcode: M301 E[extruder number, 0-2]
-  #define PID_FUNCTIONAL_RANGE 10 // If the temperature difference between the target temperature and the actual temperature
+  #define PID_FUNCTIONAL_RANGE 20 // If the temperature difference between the target temperature and the actual temperature
                                   // is more than PID_FUNCTIONAL_RANGE then the PID will be shut off and the heater will be set to min/max.
   #define PID_INTEGRAL_DRIVE_MAX PID_MAX  //limit for the integral term
   #define K1 0.95 //smoothing factor within the PID
 
-  // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
-  // Ultimaker
-  #define  DEFAULT_Kp 22.2
-  #define  DEFAULT_Ki 1.08
-  #define  DEFAULT_Kd 114
-
-  // MakerGear
-  //#define  DEFAULT_Kp 7.0
-  //#define  DEFAULT_Ki 0.1
-  //#define  DEFAULT_Kd 12
-
-  // Mendel Parts V9 on 12V
-  //#define  DEFAULT_Kp 63.0
-  //#define  DEFAULT_Ki 2.25
-  //#define  DEFAULT_Kd 440
+  // Merlin Hotend: From Autotune
+  #define  DEFAULT_Kp 24.5
+  #define  DEFAULT_Ki 1.72
+  #define  DEFAULT_Kd 87.73
 
 #endif // PIDTEMP
 
@@ -275,7 +289,7 @@
 // If your configuration is significantly different than this and you don't understand the issues involved, you probably
 // shouldn't use bed PID until someone else verifies your hardware works.
 // If this is enabled, find your own PID constants below.
-//#define PIDTEMPBED
+#define PIDTEMPBED
 
 //#define BED_LIMIT_SWITCHING
 
@@ -291,17 +305,11 @@
 
   #define PID_BED_INTEGRAL_DRIVE_MAX MAX_BED_POWER //limit for the integral term
 
-  //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
-  //from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define  DEFAULT_bedKp 10.00
-  #define  DEFAULT_bedKi .023
-  #define  DEFAULT_bedKd 305.4
-
-  //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
+  //12v Heatbed Mk3 12V in parallel
   //from pidautotune
-  //#define  DEFAULT_bedKp 97.1
-  //#define  DEFAULT_bedKi 1.41
-  //#define  DEFAULT_bedKd 1675.16
+  #define  DEFAULT_bedKp 630.14
+  #define  DEFAULT_bedKi 121.71
+  #define  DEFAULT_bedKd 815.64
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
@@ -310,11 +318,11 @@
 
 //this prevents dangerous Extruder moves, i.e. if the temperature is under the limit
 //can be software-disabled for whatever purposes by
-#define PREVENT_DANGEROUS_EXTRUDE
+//#define PREVENT_DANGEROUS_EXTRUDE
 //if PREVENT_DANGEROUS_EXTRUDE is on, you can still disable (uncomment) very long bits of extrusion separately.
 #define PREVENT_LENGTHY_EXTRUDE
 
-#define EXTRUDE_MINTEMP 170
+#define EXTRUDE_MINTEMP 150
 #define EXTRUDE_MAXLENGTH (X_MAX_LENGTH+Y_MAX_LENGTH) //prevent extrusion of very large distances.
 
 //===========================================================================
@@ -362,21 +370,21 @@
 // extra connectors. Leave undefined any used for non-endstop and non-probe purposes.
 #define USE_XMIN_PLUG
 #define USE_YMIN_PLUG
-#define USE_ZMIN_PLUG
+//#define USE_ZMIN_PLUG
 //#define USE_XMAX_PLUG
 //#define USE_YMAX_PLUG
-//#define USE_ZMAX_PLUG
+#define USE_ZMAX_PLUG
 
 // coarse Endstop Settings
-#define ENDSTOPPULLUPS // Comment this out (using // at the start of the line) to disable the endstop pullup resistors
+//#define ENDSTOPPULLUPS // Comment this out (using // at the start of the line) to disable the endstop pullup resistors
 
 #if DISABLED(ENDSTOPPULLUPS)
   // fine endstop settings: Individual pullups. will be ignored if ENDSTOPPULLUPS is defined
   //#define ENDSTOPPULLUP_XMAX
   //#define ENDSTOPPULLUP_YMAX
-  //#define ENDSTOPPULLUP_ZMAX
-  //#define ENDSTOPPULLUP_XMIN
-  //#define ENDSTOPPULLUP_YMIN
+  #define ENDSTOPPULLUP_ZMAX  // open pin, inverted
+  #define ENDSTOPPULLUP_XMIN  // open pin, inverted
+  #define ENDSTOPPULLUP_YMIN  // open pin, inverted
   //#define ENDSTOPPULLUP_ZMIN
   //#define ENDSTOPPULLUP_ZMIN_PROBE
 #endif
@@ -385,9 +393,9 @@
 const bool X_MIN_ENDSTOP_INVERTING = true; // set to true to invert the logic of the endstop.
 const bool Y_MIN_ENDSTOP_INVERTING = true; // set to true to invert the logic of the endstop.
 const bool Z_MIN_ENDSTOP_INVERTING = true; // set to true to invert the logic of the endstop.
-const bool X_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic of the endstop.
-const bool Y_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic of the endstop.
-const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic of the endstop.
+const bool X_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of the endstop.
+const bool Y_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of the endstop.
+const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of the endstop.
 const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the logic of the endstop.
 
 //===========================================================================
@@ -480,8 +488,8 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 // ENDSTOP SETTINGS:
 // Sets direction of endstops when homing; 1=MAX, -1=MIN
 // :[-1,1]
-#define X_HOME_DIR -1
-#define Y_HOME_DIR -1
+#define X_HOME_DIR 1
+#define Y_HOME_DIR 1
 #define Z_HOME_DIR -1
 
 #define min_software_endstops true // If true, axis won't move to coordinates less than HOME_POS.
@@ -492,10 +500,10 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 // Travel limits after homing (units are in mm)
 #define X_MIN_POS 0
 #define Y_MIN_POS 0
-#define Z_MIN_POS 0
-#define X_MAX_POS 160
-#define Y_MAX_POS 160
-#define Z_MAX_POS 190
+#define Z_MIN_POS MANUAL_Z_HOME_POS
+#define X_MAX_POS 200
+#define Y_MAX_POS 200
+#define Z_MAX_POS 225
 
 //===========================================================================
 //========================= Filament Runout Sensor ==========================
@@ -541,7 +549,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 
 //#define AUTO_BED_LEVELING_FEATURE // Delete the comment to enable (remove // at the start of the line)
 //#define DEBUG_LEVELING_FEATURE
-#define Z_MIN_PROBE_REPEATABILITY_TEST  // If not commented out, Z Probe Repeatability test will be included if Auto Bed Leveling is Enabled.
+//#define Z_MIN_PROBE_REPEATABILITY_TEST  // If not commented out, Z Probe Repeatability test will be included if Auto Bed Leveling is Enabled.
 
 #if ENABLED(AUTO_BED_LEVELING_FEATURE)
 
@@ -603,9 +611,9 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
   //    |           |
   //    O-- FRONT --+
   //  (0,0)
-  #define X_PROBE_OFFSET_FROM_EXTRUDER 10  // X offset: -left  +right  [of the nozzle]
-  #define Y_PROBE_OFFSET_FROM_EXTRUDER 10  // Y offset: -front +behind [the nozzle]
-  #define Z_PROBE_OFFSET_FROM_EXTRUDER 0   // Z offset: -below +above  [the nozzle]
+  #define X_PROBE_OFFSET_FROM_EXTRUDER -25     // X offset: -left  +right  [of the nozzle]
+  #define Y_PROBE_OFFSET_FROM_EXTRUDER -29     // Y offset: -front +behind [the nozzle]
+  #define Z_PROBE_OFFSET_FROM_EXTRUDER -12.35  // Z offset: -below +above  [the nozzle]
 
   #define XY_TRAVEL_SPEED 8000         // X and Y axis travel speed between probes, in mm/min.
 
@@ -645,16 +653,16 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 // @section homing
 
 // The position of the homing switches
-//#define MANUAL_HOME_POSITIONS  // If defined, MANUAL_*_HOME_POS below will be used
+#define MANUAL_HOME_POSITIONS  // If defined, MANUAL_*_HOME_POS below will be used
 //#define BED_CENTER_AT_0_0  // If defined, the center of the bed is at (X=0, Y=0)
 
 // Manual homing switch locations:
 // For deltabots this means top and center of the Cartesian print volume.
 #if ENABLED(MANUAL_HOME_POSITIONS)
-  #define MANUAL_X_HOME_POS 0
-  #define MANUAL_Y_HOME_POS 0
-  #define MANUAL_Z_HOME_POS 0
-  //#define MANUAL_Z_HOME_POS 402 // For delta: Distance between nozzle and print surface after homing.
+  // For SCARA: Offset between HomingPosition and Bed X=0 / Y=0
+  #define MANUAL_X_HOME_POS -22.
+  #define MANUAL_Y_HOME_POS -52.
+  #define MANUAL_Z_HOME_POS 0.1  // Distance between nozzle and print surface after homing.
 #endif
 
 // Use "Z Safe Homing" to avoid homing with a Z probe outside the bed area.
@@ -672,39 +680,28 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
   #define Z_SAFE_HOMING_Y_POINT ((Y_MIN_POS + Y_MAX_POS) / 2)    // Y point for Z homing when homing all axis (G28).
 #endif
 
-
 // @section movement
 
 /**
  * MOVEMENT SETTINGS
  */
 
-#define HOMING_FEEDRATE {50*60, 50*60, 4*60, 0}  // set the homing speeds (mm/min)
+#define HOMING_FEEDRATE {40*60, 40*60, 10*60, 0}  // set the homing speeds (mm/min)
 
 // default settings
 
-// NOTA: El número de pasos por revolución para los ejes X y Y de las FDM20 queda de la siguiente forma:
-// Polea dentada paso 2mm x 16 dientes = 100
-// Polea dentada paso 2mm x 20 dientes = 80
-// Engrane estriado de 7.15mm de diametro = 142
-// Engrane estriado grande = 102
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {103.69,106.65,200/1.25,1000}  // default steps per unit for SCARA
+#define DEFAULT_MAX_FEEDRATE          {300, 300, 30, 25}    // (mm/sec)
+#define DEFAULT_MAX_ACCELERATION      {300,300,20,1000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,2560,102}  // default steps per unit for Ultimaker
-#define DEFAULT_MAX_FEEDRATE          {300, 300, 10, 40}    // (mm/sec)
-#define DEFAULT_MAX_ACCELERATION      {3000,3000,100,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
-
-//#define DEFAULT_ACCELERATION          3000    // X, Y, Z and E acceleration in mm/s^2 for printing moves
-//#define DEFAULT_RETRACT_ACCELERATION  3000    // E acceleration in mm/s^2 for retracts
-//#define DEFAULT_TRAVEL_ACCELERATION   1000    // X, Y, Z acceleration in mm/s^2 for travel (non printing) moves
-
-#define DEFAULT_ACCELERATION          3000    // X, Y, Z and E acceleration in mm/s^2 for printing moves
-#define DEFAULT_RETRACT_ACCELERATION  3000    // E acceleration in mm/s^2 for retracts
-#define DEFAULT_TRAVEL_ACCELERATION   500    // X, Y, Z acceleration in mm/s^2 for travel (non printing) moves
+#define DEFAULT_ACCELERATION          400    // X, Y, Z and E acceleration in mm/s^2 for printing moves
+#define DEFAULT_RETRACT_ACCELERATION  2000   // E acceleration in mm/s^2 for retracts
+#define DEFAULT_TRAVEL_ACCELERATION   400    // X, Y, Z acceleration in mm/s^2 for travel (non printing) moves
 
 // The speed change that does not require acceleration (i.e. the software might assume it can be done instantaneously)
-#define DEFAULT_XYJERK                20.0    // (mm/sec)
-#define DEFAULT_ZJERK                 0.4     // (mm/sec)
-#define DEFAULT_EJERK                 5.0    // (mm/sec)
+#define DEFAULT_XYJERK                5    // (mm/sec)
+#define DEFAULT_ZJERK                 0.4    // (mm/sec)
+#define DEFAULT_EJERK                 3    // (mm/sec)
 
 
 //=============================================================================
@@ -714,7 +711,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 // @section more
 
 // Custom M code points
-#define CUSTOM_M_CODES
+//#define CUSTOM_M_CODES
 #if ENABLED(CUSTOM_M_CODES)
   #if ENABLED(AUTO_BED_LEVELING_FEATURE)
     #define CUSTOM_M_CODE_SET_Z_PROBE_OFFSET 851
@@ -761,11 +758,11 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 // Preheat Constants
 #define PLA_PREHEAT_HOTEND_TEMP 180
 #define PLA_PREHEAT_HPB_TEMP 70
-#define PLA_PREHEAT_FAN_SPEED 0   // Insert Value between 0 and 255
+#define PLA_PREHEAT_FAN_SPEED 255   // Insert Value between 0 and 255
 
 #define ABS_PREHEAT_HOTEND_TEMP 240
-#define ABS_PREHEAT_HPB_TEMP 110
-#define ABS_PREHEAT_FAN_SPEED 0   // Insert Value between 0 and 255
+#define ABS_PREHEAT_HPB_TEMP 100
+#define ABS_PREHEAT_FAN_SPEED 255   // Insert Value between 0 and 255
 
 //=============================================================================
 //============================= LCD and SD support ============================
@@ -781,7 +778,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 //    en, pl, fr, de, es, ru, bg, it, pt, pt_utf8, pt-br, pt-br_utf8,
 //    fi, an, nl, ca, eu, kana, kana_utf8, cn, cz, test
 //
-#define LANGUAGE_INCLUDE GENERATE_LANGUAGE_INCLUDE(es)
+//#define LANGUAGE_INCLUDE GENERATE_LANGUAGE_INCLUDE(en)
 
 //
 // LCD CHARACTER SET
@@ -813,7 +810,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 // IMPORTANT NOTE: The U8glib library is required for Full Graphic Display!
 //                 https://github.com/olikraus/U8glib_Arduino
 //
-#define ULTRA_LCD   // Character based
+//#define ULTRA_LCD   // Character based
 //#define DOGLCD      // Full graphics display
 
 //
@@ -822,7 +819,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 // SD Card support is disabled by default. If your controller has an SD slot,
 // you must uncomment the following option or it won't work.
 //
-#define SDSUPPORT
+//#define SDSUPPORT
 
 //
 // SD CARD: SPI SPEED
@@ -839,7 +836,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 //
 // Use CRC checks and retries on the SD communication.
 //
-#define SD_CHECK_AND_RETRY
+//#define SD_CHECK_AND_RETRY
 
 //
 // ENCODER SETTINGS
@@ -859,7 +856,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 // This option reverses the encoder direction for navigating LCD menus.
 // By default CLOCKWISE == DOWN. With this enabled CLOCKWISE == UP.
 //
-#define REVERSE_MENU_DIRECTION
+//#define REVERSE_MENU_DIRECTION
 
 //
 // SPEAKER/BUZZER
@@ -867,7 +864,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 // If you have a speaker that can produce tones, enable it here.
 // By default Marlin assumes you have a buzzer with a fixed frequency.
 //
-#define SPEAKER
+//#define SPEAKER
 
 //
 // The duration and frequency for the UI feedback sound.
@@ -876,8 +873,8 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 // Note: Test audio output with the G-Code:
 //  M300 S<frequency Hz> P<duration ms>
 //
-#define LCD_FEEDBACK_FREQUENCY_DURATION_MS 50
-#define LCD_FEEDBACK_FREQUENCY_HZ 200
+//#define LCD_FEEDBACK_FREQUENCY_DURATION_MS 100
+//#define LCD_FEEDBACK_FREQUENCY_HZ 1000
 
 //
 // CONTROLLER TYPE: Standard
@@ -928,7 +925,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 //
 // Note: Usually sold with a white PCB.
 //
-#define REPRAP_DISCOUNT_SMART_CONTROLLER
+//#define REPRAP_DISCOUNT_SMART_CONTROLLER
 
 //
 // BQ LCD Smart Controller shipped by

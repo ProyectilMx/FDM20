@@ -105,12 +105,12 @@
 // The following define selects which electronics board you have.
 // Please choose the name from boards.h that matches your setup
 #ifndef MOTHERBOARD
-  #define MOTHERBOARD BOARD_RAMPS_14_EFB
+  #define MOTHERBOARD BOARD_OMCA
 #endif
 
 // Optional custom name for your RepStrap or other custom machine
 // Displayed in the LCD "Ready" message
-#define CUSTOM_MACHINE_NAME "FDM 20"
+//#define CUSTOM_MACHINE_NAME "3D Printer"
 
 // Define this to set a unique identifier for this printer, (Used by some programs to differentiate between machines)
 // You can use an online service to generate a random UUID. (eg http://www.uuidgenerator.net/version4)
@@ -186,19 +186,19 @@
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_3 0
-#define TEMP_SENSOR_BED 1
+#define TEMP_SENSOR_BED 5
 
 // This makes temp sensor 1 a redundant sensor for sensor 0. If the temperatures difference between these sensors is to high the print will be aborted.
 //#define TEMP_SENSOR_1_AS_REDUNDANT
 #define MAX_REDUNDANT_TEMP_SENSOR_DIFF 10
 
 // Extruder temperature must be close to target for this long before M109 returns success
-#define TEMP_RESIDENCY_TIME 2  // (seconds)
+#define TEMP_RESIDENCY_TIME 10  // (seconds)
 #define TEMP_HYSTERESIS 3       // (degC) range of +/- temperatures considered "close" to the target one
 #define TEMP_WINDOW     1       // (degC) Window around target to start the residency timer x degC early.
 
 // Bed temperature must be close to target for this long before M190 returns success
-#define TEMP_BED_RESIDENCY_TIME 2  // (seconds)
+#define TEMP_BED_RESIDENCY_TIME 0   // (seconds)
 #define TEMP_BED_HYSTERESIS 3       // (degC) range of +/- temperatures considered "close" to the target one
 #define TEMP_BED_WINDOW     1       // (degC) Window around target to start the residency timer x degC early.
 
@@ -246,20 +246,10 @@
   #define K1 0.95 //smoothing factor within the PID
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
-  // Ultimaker
-  #define  DEFAULT_Kp 22.2
-  #define  DEFAULT_Ki 1.08
-  #define  DEFAULT_Kd 114
-
-  // MakerGear
-  //#define  DEFAULT_Kp 7.0
-  //#define  DEFAULT_Ki 0.1
-  //#define  DEFAULT_Kd 12
-
-  // Mendel Parts V9 on 12V
-  //#define  DEFAULT_Kp 63.0
-  //#define  DEFAULT_Ki 2.25
-  //#define  DEFAULT_Kd 440
+  // J-Head Mk V-B
+  #define  DEFAULT_Kp 25.05
+  #define  DEFAULT_Ki 2.30
+  #define  DEFAULT_Kd 68.15
 
 #endif // PIDTEMP
 
@@ -349,7 +339,7 @@
 //#define COREXZ
 
 // Enable this option for Toshiba steppers
-//#define CONFIG_STEPPERS_TOSHIBA
+#define CONFIG_STEPPERS_TOSHIBA
 
 //===========================================================================
 //============================== Endstop Settings ===========================
@@ -385,10 +375,10 @@
 const bool X_MIN_ENDSTOP_INVERTING = true; // set to true to invert the logic of the endstop.
 const bool Y_MIN_ENDSTOP_INVERTING = true; // set to true to invert the logic of the endstop.
 const bool Z_MIN_ENDSTOP_INVERTING = true; // set to true to invert the logic of the endstop.
-const bool X_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic of the endstop.
-const bool Y_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic of the endstop.
-const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic of the endstop.
-const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the logic of the endstop.
+const bool X_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of the endstop.
+const bool Y_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of the endstop.
+const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of the endstop.
+const bool Z_MIN_PROBE_ENDSTOP_INVERTING = true; // set to true to invert the logic of the endstop.
 
 //===========================================================================
 //============================= Z Probe Options =============================
@@ -440,10 +430,10 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 
 // For Inverting Stepper Enable Pins (Active Low) use 0, Non Inverting (Active High) use 1
 // :{0:'Low',1:'High'}
-#define X_ENABLE_ON 0
-#define Y_ENABLE_ON 0
-#define Z_ENABLE_ON 0
-#define E_ENABLE_ON 0 // For all extruders
+#define X_ENABLE_ON 1
+#define Y_ENABLE_ON 1
+#define Z_ENABLE_ON 1
+#define E_ENABLE_ON 1 // For all extruders
 
 // Disables axis stepper immediately when it's not being used.
 // WARNING: When motors turn off there is a chance of losing position accuracy!
@@ -493,9 +483,9 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 #define X_MIN_POS 0
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
-#define X_MAX_POS 160
-#define Y_MAX_POS 160
-#define Z_MAX_POS 190
+#define X_MAX_POS 205
+#define Y_MAX_POS 205
+#define Z_MAX_POS 120
 
 //===========================================================================
 //========================= Filament Runout Sensor ==========================
@@ -603,9 +593,9 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
   //    |           |
   //    O-- FRONT --+
   //  (0,0)
-  #define X_PROBE_OFFSET_FROM_EXTRUDER 10  // X offset: -left  +right  [of the nozzle]
-  #define Y_PROBE_OFFSET_FROM_EXTRUDER 10  // Y offset: -front +behind [the nozzle]
-  #define Z_PROBE_OFFSET_FROM_EXTRUDER 0   // Z offset: -below +above  [the nozzle]
+  #define X_PROBE_OFFSET_FROM_EXTRUDER -25     // X offset: -left  +right  [of the nozzle]
+  #define Y_PROBE_OFFSET_FROM_EXTRUDER -29     // Y offset: -front +behind [the nozzle]
+  #define Z_PROBE_OFFSET_FROM_EXTRUDER -12.35  // Z offset: -below +above  [the nozzle]
 
   #define XY_TRAVEL_SPEED 8000         // X and Y axis travel speed between probes, in mm/min.
 
@@ -672,7 +662,6 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
   #define Z_SAFE_HOMING_Y_POINT ((Y_MIN_POS + Y_MAX_POS) / 2)    // Y point for Z homing when homing all axis (G28).
 #endif
 
-
 // @section movement
 
 /**
@@ -683,22 +672,16 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 
 // default settings
 
-// NOTA: El número de pasos por revolución para los ejes X y Y de las FDM20 queda de la siguiente forma:
-// Polea dentada paso 2mm x 16 dientes = 100
-// Polea dentada paso 2mm x 20 dientes = 80
-// Engrane estriado de 7.15mm de diametro = 142
-// Engrane estriado grande = 102
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   {79.87, 79.87, 2566, 563,78} // Al's TVRR
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   {81.26, 80.01, 2561, 599.14} // Michel TVRR old
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   {71.1, 71.1, 2560, 739.65} // Michel TVRR
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {71.1, 71.1, 2560, 600} // David TVRR
+#define DEFAULT_MAX_FEEDRATE          {500, 500, 5, 45}    // (mm/sec) David TVRR
+#define DEFAULT_MAX_ACCELERATION      {9000,9000,100,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,2560,102}  // default steps per unit for Ultimaker
-#define DEFAULT_MAX_FEEDRATE          {300, 300, 10, 40}    // (mm/sec)
-#define DEFAULT_MAX_ACCELERATION      {3000,3000,100,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
-
-//#define DEFAULT_ACCELERATION          3000    // X, Y, Z and E acceleration in mm/s^2 for printing moves
-//#define DEFAULT_RETRACT_ACCELERATION  3000    // E acceleration in mm/s^2 for retracts
-//#define DEFAULT_TRAVEL_ACCELERATION   1000    // X, Y, Z acceleration in mm/s^2 for travel (non printing) moves
-
-#define DEFAULT_ACCELERATION          3000    // X, Y, Z and E acceleration in mm/s^2 for printing moves
-#define DEFAULT_RETRACT_ACCELERATION  3000    // E acceleration in mm/s^2 for retracts
+/* MICHEL: This has an impact on the "ripples" in print walls */
+#define DEFAULT_ACCELERATION          500    // X, Y, Z and E acceleration in mm/s^2 for printing moves
+#define DEFAULT_RETRACT_ACCELERATION  3000   // E acceleration in mm/s^2 for retracts
 #define DEFAULT_TRAVEL_ACCELERATION   500    // X, Y, Z acceleration in mm/s^2 for travel (non printing) moves
 
 // The speed change that does not require acceleration (i.e. the software might assume it can be done instantaneously)
@@ -761,11 +744,11 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 // Preheat Constants
 #define PLA_PREHEAT_HOTEND_TEMP 180
 #define PLA_PREHEAT_HPB_TEMP 70
-#define PLA_PREHEAT_FAN_SPEED 0   // Insert Value between 0 and 255
+#define PLA_PREHEAT_FAN_SPEED 255   // Insert Value between 0 and 255
 
 #define ABS_PREHEAT_HOTEND_TEMP 240
-#define ABS_PREHEAT_HPB_TEMP 110
-#define ABS_PREHEAT_FAN_SPEED 0   // Insert Value between 0 and 255
+#define ABS_PREHEAT_HPB_TEMP 100
+#define ABS_PREHEAT_FAN_SPEED 255   // Insert Value between 0 and 255
 
 //=============================================================================
 //============================= LCD and SD support ============================
@@ -781,7 +764,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 //    en, pl, fr, de, es, ru, bg, it, pt, pt_utf8, pt-br, pt-br_utf8,
 //    fi, an, nl, ca, eu, kana, kana_utf8, cn, cz, test
 //
-#define LANGUAGE_INCLUDE GENERATE_LANGUAGE_INCLUDE(es)
+//#define LANGUAGE_INCLUDE GENERATE_LANGUAGE_INCLUDE(en)
 
 //
 // LCD CHARACTER SET
@@ -813,7 +796,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 // IMPORTANT NOTE: The U8glib library is required for Full Graphic Display!
 //                 https://github.com/olikraus/U8glib_Arduino
 //
-#define ULTRA_LCD   // Character based
+//#define ULTRA_LCD   // Character based
 //#define DOGLCD      // Full graphics display
 
 //
@@ -822,7 +805,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 // SD Card support is disabled by default. If your controller has an SD slot,
 // you must uncomment the following option or it won't work.
 //
-#define SDSUPPORT
+//#define SDSUPPORT
 
 //
 // SD CARD: SPI SPEED
@@ -839,7 +822,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 //
 // Use CRC checks and retries on the SD communication.
 //
-#define SD_CHECK_AND_RETRY
+//#define SD_CHECK_AND_RETRY
 
 //
 // ENCODER SETTINGS
@@ -859,7 +842,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 // This option reverses the encoder direction for navigating LCD menus.
 // By default CLOCKWISE == DOWN. With this enabled CLOCKWISE == UP.
 //
-#define REVERSE_MENU_DIRECTION
+//#define REVERSE_MENU_DIRECTION
 
 //
 // SPEAKER/BUZZER
@@ -867,7 +850,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 // If you have a speaker that can produce tones, enable it here.
 // By default Marlin assumes you have a buzzer with a fixed frequency.
 //
-#define SPEAKER
+//#define SPEAKER
 
 //
 // The duration and frequency for the UI feedback sound.
@@ -876,8 +859,8 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 // Note: Test audio output with the G-Code:
 //  M300 S<frequency Hz> P<duration ms>
 //
-#define LCD_FEEDBACK_FREQUENCY_DURATION_MS 50
-#define LCD_FEEDBACK_FREQUENCY_HZ 200
+//#define LCD_FEEDBACK_FREQUENCY_DURATION_MS 100
+//#define LCD_FEEDBACK_FREQUENCY_HZ 1000
 
 //
 // CONTROLLER TYPE: Standard
@@ -928,7 +911,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 //
 // Note: Usually sold with a white PCB.
 //
-#define REPRAP_DISCOUNT_SMART_CONTROLLER
+//#define REPRAP_DISCOUNT_SMART_CONTROLLER
 
 //
 // BQ LCD Smart Controller shipped by

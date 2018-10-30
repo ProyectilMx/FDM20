@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Marlin 3D Printer Firmware
  * Copyright (C) 2016 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
  *
@@ -18,6 +18,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
+ */
+
+/**
+ * Sample configuration file for Vellemann K8200
+ * tested on K8200 with VM8201 (Display)
+ * and Arduino 1.6.8 (Mac) by @CONSULitAS, 2016-02-21
+ * https://github.com/CONSULitAS/Marlin-K8200/archive/K8200_stable_2016-02-21.zip
  */
 
 /**
@@ -82,7 +89,7 @@
 // User-specified version info of this build to display in [Pronterface, etc] terminal window during
 // startup. Implementation of an idea by Prof Braino to inform user that any changes made to this
 // build by the user have been successfully uploaded into firmware.
-#define STRING_CONFIG_H_AUTHOR "(none, default config)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(K8200, @CONSULitAS)" // Who made the changes.
 #define SHOW_BOOTSCREEN
 #define STRING_SPLASH_LINE1 SHORT_BUILD_VERSION // will be shown during bootup in line 1
 //#define STRING_SPLASH_LINE2 STRING_DISTRIBUTION_DATE // will be shown during bootup in line 2
@@ -105,16 +112,16 @@
 // The following define selects which electronics board you have.
 // Please choose the name from boards.h that matches your setup
 #ifndef MOTHERBOARD
-  #define MOTHERBOARD BOARD_RAMPS_14_EFB
+  #define MOTHERBOARD BOARD_K8200
 #endif
 
 // Optional custom name for your RepStrap or other custom machine
 // Displayed in the LCD "Ready" message
-#define CUSTOM_MACHINE_NAME "FDM 20"
+#define CUSTOM_MACHINE_NAME "K8200"
 
 // Define this to set a unique identifier for this printer, (Used by some programs to differentiate between machines)
 // You can use an online service to generate a random UUID. (eg http://www.uuidgenerator.net/version4)
-//#define MACHINE_UUID "00000000-0000-0000-0000-000000000000"
+#define MACHINE_UUID "2b7dea3b-844e-4ab1-aa96-bb6406607d6e" // K8200 standard config with VM8201 (Display)
 
 // This defines the number of extruders
 // :[1,2,3,4]
@@ -186,19 +193,19 @@
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_3 0
-#define TEMP_SENSOR_BED 1
+#define TEMP_SENSOR_BED 5
 
 // This makes temp sensor 1 a redundant sensor for sensor 0. If the temperatures difference between these sensors is to high the print will be aborted.
 //#define TEMP_SENSOR_1_AS_REDUNDANT
 #define MAX_REDUNDANT_TEMP_SENSOR_DIFF 10
 
 // Extruder temperature must be close to target for this long before M109 returns success
-#define TEMP_RESIDENCY_TIME 2  // (seconds)
+#define TEMP_RESIDENCY_TIME 10  // (seconds)
 #define TEMP_HYSTERESIS 3       // (degC) range of +/- temperatures considered "close" to the target one
 #define TEMP_WINDOW     1       // (degC) Window around target to start the residency timer x degC early.
 
 // Bed temperature must be close to target for this long before M190 returns success
-#define TEMP_BED_RESIDENCY_TIME 2  // (seconds)
+#define TEMP_BED_RESIDENCY_TIME 0   // (seconds)
 #define TEMP_BED_HYSTERESIS 3       // (degC) range of +/- temperatures considered "close" to the target one
 #define TEMP_BED_WINDOW     1       // (degC) Window around target to start the residency timer x degC early.
 
@@ -247,9 +254,9 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   // Ultimaker
-  #define  DEFAULT_Kp 22.2
-  #define  DEFAULT_Ki 1.08
-  #define  DEFAULT_Kd 114
+  //#define  DEFAULT_Kp 22.2
+  //#define  DEFAULT_Ki 1.08
+  //#define  DEFAULT_Kd 114
 
   // MakerGear
   //#define  DEFAULT_Kp 7.0
@@ -261,6 +268,10 @@
   //#define  DEFAULT_Ki 2.25
   //#define  DEFAULT_Kd 440
 
+  // Vellemann K8200 Extruder - calculated with PID Autotune and tested
+  #define  DEFAULT_Kp 24.29
+  #define  DEFAULT_Ki 1.58
+  #define  DEFAULT_Kd 93.51
 #endif // PIDTEMP
 
 //===========================================================================
@@ -275,7 +286,7 @@
 // If your configuration is significantly different than this and you don't understand the issues involved, you probably
 // shouldn't use bed PID until someone else verifies your hardware works.
 // If this is enabled, find your own PID constants below.
-//#define PIDTEMPBED
+#define PIDTEMPBED
 
 //#define BED_LIMIT_SWITCHING
 
@@ -293,9 +304,9 @@
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define  DEFAULT_bedKp 10.00
-  #define  DEFAULT_bedKi .023
-  #define  DEFAULT_bedKd 305.4
+  //#define  DEFAULT_bedKp 10.00
+  //#define  DEFAULT_bedKi .023
+  //#define  DEFAULT_bedKd 305.4
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from pidautotune
@@ -304,6 +315,12 @@
   //#define  DEFAULT_bedKd 1675.16
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
+
+  // Vellemann K8200 PCB heatbed with standard PCU at 60 degreesC - calculated with PID Autotune and tested
+  // from pidautotune
+  #define  DEFAULT_bedKp 341.88
+  #define  DEFAULT_bedKi 25.32
+  #define  DEFAULT_bedKd 1153.89
 #endif // PIDTEMPBED
 
 // @section extruder
@@ -375,19 +392,19 @@
   //#define ENDSTOPPULLUP_XMAX
   //#define ENDSTOPPULLUP_YMAX
   //#define ENDSTOPPULLUP_ZMAX
-  //#define ENDSTOPPULLUP_XMIN
-  //#define ENDSTOPPULLUP_YMIN
-  //#define ENDSTOPPULLUP_ZMIN
+  #define ENDSTOPPULLUP_XMIN
+  #define ENDSTOPPULLUP_YMIN
+  #define ENDSTOPPULLUP_ZMIN
   //#define ENDSTOPPULLUP_ZMIN_PROBE
 #endif
 
 // Mechanical endstop with COM to ground and NC to Signal uses "false" here (most common setup).
-const bool X_MIN_ENDSTOP_INVERTING = true; // set to true to invert the logic of the endstop.
-const bool Y_MIN_ENDSTOP_INVERTING = true; // set to true to invert the logic of the endstop.
-const bool Z_MIN_ENDSTOP_INVERTING = true; // set to true to invert the logic of the endstop.
-const bool X_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic of the endstop.
-const bool Y_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic of the endstop.
-const bool Z_MAX_ENDSTOP_INVERTING = false; // set to true to invert the logic of the endstop.
+const bool X_MIN_ENDSTOP_INVERTING = false; // set to true to invert the logic of the endstop.
+const bool Y_MIN_ENDSTOP_INVERTING = false; // set to true to invert the logic of the endstop.
+const bool Z_MIN_ENDSTOP_INVERTING = false; // set to true to invert the logic of the endstop.
+const bool X_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of the endstop.
+const bool Y_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of the endstop.
+const bool Z_MAX_ENDSTOP_INVERTING = true; // set to true to invert the logic of the endstop.
 const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the logic of the endstop.
 
 //===========================================================================
@@ -449,7 +466,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 // WARNING: When motors turn off there is a chance of losing position accuracy!
 #define DISABLE_X false
 #define DISABLE_Y false
-#define DISABLE_Z false
+#define DISABLE_Z false // not for K8200 -> looses Steps
 // Warn on display about possibly reduced accuracy
 //#define DISABLE_REDUCED_ACCURACY_WARNING
 
@@ -462,16 +479,16 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
 #define INVERT_X_DIR false
-#define INVERT_Y_DIR false
-#define INVERT_Z_DIR true
+#define INVERT_Y_DIR false // was true -> why for K8200?
+#define INVERT_Z_DIR false
 
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR false
-#define INVERT_E1_DIR false
-#define INVERT_E2_DIR false
-#define INVERT_E3_DIR false
+#define INVERT_E0_DIR true // K8200: true for geared default extruder!
+#define INVERT_E1_DIR true
+#define INVERT_E2_DIR true
+#define INVERT_E3_DIR true
 
 // @section homing
 //#define MIN_Z_HEIGHT_FOR_HOMING 4 // (in mm) Minimal z height before homing (G28) for Z clearance above the bed, clamps, ...
@@ -493,9 +510,9 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 #define X_MIN_POS 0
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
-#define X_MAX_POS 160
-#define Y_MAX_POS 160
-#define Z_MAX_POS 190
+#define X_MAX_POS 200
+#define Y_MAX_POS 200
+#define Z_MAX_POS 200
 
 //===========================================================================
 //========================= Filament Runout Sensor ==========================
@@ -603,9 +620,9 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
   //    |           |
   //    O-- FRONT --+
   //  (0,0)
-  #define X_PROBE_OFFSET_FROM_EXTRUDER 10  // X offset: -left  +right  [of the nozzle]
-  #define Y_PROBE_OFFSET_FROM_EXTRUDER 10  // Y offset: -front +behind [the nozzle]
-  #define Z_PROBE_OFFSET_FROM_EXTRUDER 0   // Z offset: -below +above  [the nozzle]
+  #define X_PROBE_OFFSET_FROM_EXTRUDER -25     // X offset: -left  +right  [of the nozzle]
+  #define Y_PROBE_OFFSET_FROM_EXTRUDER -29     // Y offset: -front +behind [the nozzle]
+  #define Z_PROBE_OFFSET_FROM_EXTRUDER -12.35  // Z offset: -below +above  [the nozzle]
 
   #define XY_TRAVEL_SPEED 8000         // X and Y axis travel speed between probes, in mm/min.
 
@@ -672,7 +689,6 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
   #define Z_SAFE_HOMING_Y_POINT ((Y_MIN_POS + Y_MAX_POS) / 2)    // Y point for Z homing when homing all axis (G28).
 #endif
 
-
 // @section movement
 
 /**
@@ -683,23 +699,13 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 
 // default settings
 
-// NOTA: El número de pasos por revolución para los ejes X y Y de las FDM20 queda de la siguiente forma:
-// Polea dentada paso 2mm x 16 dientes = 100
-// Polea dentada paso 2mm x 20 dientes = 80
-// Engrane estriado de 7.15mm de diametro = 142
-// Engrane estriado grande = 102
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {64.25,64.25,2560,600}  // default steps per unit for K8200
+#define DEFAULT_MAX_FEEDRATE          {500, 500, 5, 500}    // (mm/sec)
+#define DEFAULT_MAX_ACCELERATION      {9000,9000,100,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,2560,102}  // default steps per unit for Ultimaker
-#define DEFAULT_MAX_FEEDRATE          {300, 300, 10, 40}    // (mm/sec)
-#define DEFAULT_MAX_ACCELERATION      {3000,3000,100,10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
-
-//#define DEFAULT_ACCELERATION          3000    // X, Y, Z and E acceleration in mm/s^2 for printing moves
-//#define DEFAULT_RETRACT_ACCELERATION  3000    // E acceleration in mm/s^2 for retracts
-//#define DEFAULT_TRAVEL_ACCELERATION   1000    // X, Y, Z acceleration in mm/s^2 for travel (non printing) moves
-
-#define DEFAULT_ACCELERATION          3000    // X, Y, Z and E acceleration in mm/s^2 for printing moves
-#define DEFAULT_RETRACT_ACCELERATION  3000    // E acceleration in mm/s^2 for retracts
-#define DEFAULT_TRAVEL_ACCELERATION   500    // X, Y, Z acceleration in mm/s^2 for travel (non printing) moves
+#define DEFAULT_ACCELERATION          1000    // X, Y, Z and E acceleration in mm/s^2 for printing moves
+#define DEFAULT_RETRACT_ACCELERATION  1000   // E acceleration in mm/s^2 for retracts
+#define DEFAULT_TRAVEL_ACCELERATION   1000    // X, Y, Z acceleration in mm/s^2 for travel (non printing) moves
 
 // The speed change that does not require acceleration (i.e. the software might assume it can be done instantaneously)
 #define DEFAULT_XYJERK                20.0    // (mm/sec)
@@ -733,7 +739,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 // M501 - reads parameters from EEPROM (if you need reset them after you changed them temporarily).
 // M502 - reverts to the default "factory settings".  You still need to store them in EEPROM afterwards if you want to.
 //define this to enable EEPROM support
-//#define EEPROM_SETTINGS
+#define EEPROM_SETTINGS
 
 #if ENABLED(EEPROM_SETTINGS)
   // To disable EEPROM Serial responses and decrease program space by ~1700 byte: comment this out:
@@ -759,12 +765,12 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 // @section temperature
 
 // Preheat Constants
-#define PLA_PREHEAT_HOTEND_TEMP 180
-#define PLA_PREHEAT_HPB_TEMP 70
+#define PLA_PREHEAT_HOTEND_TEMP 190
+#define PLA_PREHEAT_HPB_TEMP 50 // K8200: set back to 70 if you have an upgraded heatbed power supply
 #define PLA_PREHEAT_FAN_SPEED 0   // Insert Value between 0 and 255
 
 #define ABS_PREHEAT_HOTEND_TEMP 240
-#define ABS_PREHEAT_HPB_TEMP 110
+#define ABS_PREHEAT_HPB_TEMP 60 // K8200: set back to 110 if you have an upgraded heatbed power supply
 #define ABS_PREHEAT_FAN_SPEED 0   // Insert Value between 0 and 255
 
 //=============================================================================
@@ -781,7 +787,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 //    en, pl, fr, de, es, ru, bg, it, pt, pt_utf8, pt-br, pt-br_utf8,
 //    fi, an, nl, ca, eu, kana, kana_utf8, cn, cz, test
 //
-#define LANGUAGE_INCLUDE GENERATE_LANGUAGE_INCLUDE(es)
+#define LANGUAGE_INCLUDE GENERATE_LANGUAGE_INCLUDE(en)
 
 //
 // LCD CHARACTER SET
@@ -799,7 +805,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 //
 // See also https://github.com/MarlinFirmware/Marlin/wiki/LCD-Language
 //
-#define DISPLAY_CHARSET_HD44780_JAPAN        // this is the most common hardware
+#define DISPLAY_CHARSET_HD44780_JAPAN        // K8200: for Display VM8201
 //#define DISPLAY_CHARSET_HD44780_WESTERN
 //#define DISPLAY_CHARSET_HD44780_CYRILLIC
 
@@ -813,7 +819,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 // IMPORTANT NOTE: The U8glib library is required for Full Graphic Display!
 //                 https://github.com/olikraus/U8glib_Arduino
 //
-#define ULTRA_LCD   // Character based
+//#define ULTRA_LCD   // Character based
 //#define DOGLCD      // Full graphics display
 
 //
@@ -839,7 +845,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 //
 // Use CRC checks and retries on the SD communication.
 //
-#define SD_CHECK_AND_RETRY
+//#define SD_CHECK_AND_RETRY
 
 //
 // ENCODER SETTINGS
@@ -859,7 +865,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 // This option reverses the encoder direction for navigating LCD menus.
 // By default CLOCKWISE == DOWN. With this enabled CLOCKWISE == UP.
 //
-#define REVERSE_MENU_DIRECTION
+//#define REVERSE_MENU_DIRECTION
 
 //
 // SPEAKER/BUZZER
@@ -867,7 +873,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 // If you have a speaker that can produce tones, enable it here.
 // By default Marlin assumes you have a buzzer with a fixed frequency.
 //
-#define SPEAKER
+//#define SPEAKER
 
 //
 // The duration and frequency for the UI feedback sound.
@@ -876,8 +882,8 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 // Note: Test audio output with the G-Code:
 //  M300 S<frequency Hz> P<duration ms>
 //
-#define LCD_FEEDBACK_FREQUENCY_DURATION_MS 50
-#define LCD_FEEDBACK_FREQUENCY_HZ 200
+//#define LCD_FEEDBACK_FREQUENCY_DURATION_MS 100
+//#define LCD_FEEDBACK_FREQUENCY_HZ 1000
 
 //
 // CONTROLLER TYPE: Standard
@@ -928,7 +934,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 //
 // Note: Usually sold with a white PCB.
 //
-#define REPRAP_DISCOUNT_SMART_CONTROLLER
+//#define REPRAP_DISCOUNT_SMART_CONTROLLER
 
 //
 // BQ LCD Smart Controller shipped by
